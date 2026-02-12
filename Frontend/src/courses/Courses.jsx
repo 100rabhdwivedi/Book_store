@@ -1,10 +1,12 @@
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import Course from '../components/Course'
 
 const Courses = () => {
     return (
         <>
         <Navbar/>
+        <Course/>
         <Footer/>
         </>
     )
