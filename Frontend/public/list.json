@@ -1,66 +1,241 @@
 [{
         "id": 1,
-        "name": "Story book",
-        "title": "Best story of raja ram",
+        "name": "Story Book",
+        "title": "Best Story of Raja Ram",
         "price": 100,
-        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg?t=st=1770570592~exp=1770574192~hmac=7ab518ed1a2d5eded211d784b5671268f89de7e5c5d7e10f2a5bed9e5f334766&w=1480",
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
         "category": "Free"
     },
     {
         "id": 2,
-        "name": "Music book",
-        "title": "This is a music book",
-        "price": 100,
-        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg?t=st=1770570592~exp=1770574192~hmac=7ab518ed1a2d5eded211d784b5671268f89de7e5c5d7e10f2a5bed9e5f334766&w=1480",
+        "name": "Music Book",
+        "title": "This is a Music Book",
+        "price": 120,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
         "category": "Song"
     },
     {
         "id": 3,
-        "name": "Sangeet book",
-        "title": "Sangeet se dil tak ka safar",
-        "price": 100,
-        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg?t=st=1770570592~exp=1770574192~hmac=7ab518ed1a2d5eded211d784b5671268f89de7e5c5d7e10f2a5bed9e5f334766&w=1480",
+        "name": "Sangeet Book",
+        "title": "Sangeet se Dil Tak ka Safar",
+        "price": 150,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
         "category": "Entertainment"
     },
     {
-        "id": 1,
-        "name": "Story book",
-        "title": "Best story of raja ram",
-        "price": 100,
-        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg?t=st=1770570592~exp=1770574192~hmac=7ab518ed1a2d5eded211d784b5671268f89de7e5c5d7e10f2a5bed9e5f334766&w=1480",
-        "category": "Free"
-    },
-    {
-        "id": 1,
-        "name": "Story book",
-        "title": "Best story of raja ram",
-        "price": 100,
-        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg?t=st=1770570592~exp=1770574192~hmac=7ab518ed1a2d5eded211d784b5671268f89de7e5c5d7e10f2a5bed9e5f334766&w=1480",
-        "category": "Free"
-    },
-    {
-        "id": 1,
-        "name": "Story book",
-        "title": "Best story of raja ram",
-        "price": 100,
-        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg?t=st=1770570592~exp=1770574192~hmac=7ab518ed1a2d5eded211d784b5671268f89de7e5c5d7e10f2a5bed9e5f334766&w=1480",
-        "category": "Free"
-    },
-    {
-        "id": 1,
-        "name": "Story book",
-        "title": "Best story of raja ram",
-        "price": 100,
-        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg?t=st=1770570592~exp=1770574192~hmac=7ab518ed1a2d5eded211d784b5671268f89de7e5c5d7e10f2a5bed9e5f334766&w=1480",
-        "category": "Free"
-    },
-    {
         "id": 4,
-        "name": " Safar",
-        "title": "Jo dil ko chhoo jaye",
-        "price": 100,
-        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg?t=st=1770570592~exp=1770574192~hmac=7ab518ed1a2d5eded211d784b5671268f89de7e5c5d7e10f2a5bed9e5f334766&w=1480",
+        "name": "Safar",
+        "title": "Jo Dil Ko Chhoo Jaye",
+        "price": 130,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
         "category": "Life"
+    },
+    {
+        "id": 5,
+        "name": "Science Book",
+        "title": "Amazing World of Science",
+        "price": 200,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Education"
+    },
+    {
+        "id": 6,
+        "name": "History Book",
+        "title": "Past That Built Us",
+        "price": 180,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "History"
+    },
+    {
+        "id": 7,
+        "name": "Coding Guide",
+        "title": "JavaScript for Beginners",
+        "price": 250,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Programming"
+    },
+    {
+        "id": 8,
+        "name": "Motivation Book",
+        "title": "Rise and Shine",
+        "price": 140,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Motivation"
+    },
+    {
+        "id": 9,
+        "name": "Poetry Book",
+        "title": "Words from the Heart",
+        "price": 110,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Poetry"
+    },
+    {
+        "id": 10,
+        "name": "Travel Book",
+        "title": "Journey Around the World",
+        "price": 170,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Travel"
+    },
+    {
+        "id": 11,
+        "name": "Philosophy Book",
+        "title": "Think Beyond Limits",
+        "price": 210,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Philosophy"
+    },
+    {
+        "id": 12,
+        "name": "Novel",
+        "title": "Love in the Rain",
+        "price": 190,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Romance"
+    },
+    {
+        "id": 13,
+        "name": "Adventure Book",
+        "title": "Into the Wild Forest",
+        "price": 175,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Adventure"
+    },
+    {
+        "id": 14,
+        "name": "Cooking Book",
+        "title": "Flavors of India",
+        "price": 220,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Cooking"
+    },
+    {
+        "id": 15,
+        "name": "Business Book",
+        "title": "Startup Secrets",
+        "price": 260,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Business"
+    },
+    {
+        "id": 16,
+        "name": "Fitness Book",
+        "title": "Healthy Body Guide",
+        "price": 160,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Free"
+    },
+    {
+        "id": 17,
+        "name": "Spiritual Book",
+        "title": "Peace Within",
+        "price": 145,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Spiritual"
+    },
+    {
+        "id": 18,
+        "name": "Kids Book",
+        "title": "Fun Learning ABC",
+        "price": 90,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Kids"
+    },
+    {
+        "id": 19,
+        "name": "Horror Book",
+        "title": "Night of Shadows",
+        "price": 155,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Horror"
+    },
+    {
+        "id": 20,
+        "name": "Mystery Book",
+        "title": "Hidden Truth",
+        "price": 180,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Mystery"
+    },
+    {
+        "id": 21,
+        "name": "Biography",
+        "title": "Life of a Legend",
+        "price": 230,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Biography"
+    },
+    {
+        "id": 22,
+        "name": "Drama Book",
+        "title": "Stage of Emotions",
+        "price": 140,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Free"
+    },
+    {
+        "id": 23,
+        "name": "Technology Book",
+        "title": "Future of AI",
+        "price": 275,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Technology"
+    },
+    {
+        "id": 24,
+        "name": "Art Book",
+        "title": "Colors of Creativity",
+        "price": 165,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Art"
+    },
+    {
+        "id": 25,
+        "name": "Photography Book",
+        "title": "Lens Stories",
+        "price": 210,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Photography"
+    },
+    {
+        "id": 26,
+        "name": "Language Book",
+        "title": "Speak English Fluently",
+        "price": 135,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Free"
+    },
+    {
+        "id": 27,
+        "name": "Economics Book",
+        "title": "Money Matters",
+        "price": 195,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Economics"
+    },
+    {
+        "id": 28,
+        "name": "Geography Book",
+        "title": "World Explorer",
+        "price": 170,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Geography"
+    },
+    {
+        "id": 29,
+        "name": "Psychology Book",
+        "title": "Mind Reader",
+        "price": 240,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Free"
+    },
+    {
+        "id": 30,
+        "name": "Space Book",
+        "title": "Journey to the Stars",
+        "price": 260,
+        "image": "https://img.freepik.com/free-photo/stack-various-books-table_1252-678.jpg",
+        "category": "Science"
     }
-
 ]

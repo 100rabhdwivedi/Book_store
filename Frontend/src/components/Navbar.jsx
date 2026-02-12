@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <>
             {/* Navbar */}
-            <nav className="fixed top-0 w-full bg-white border-b z-50">
+            <nav className="fixed top-0 w-full bg-white border-b z-50 cursor-pointer ">
                 <div className="max-w-[100vw] mx-auto px-2 md:px-16 py-4 flex items-center justify-between">
                     {/* Logo */}
                     <h1 className="text-[1.4rem] font-semibold text-black">
