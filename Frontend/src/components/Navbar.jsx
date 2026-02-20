@@ -76,6 +76,7 @@ const Navbar = () => {
                 </div>
             </div>
             <LoginModal isOpen={isOpenLogin} setIsOpen={setIsOpenLogin} />
+            
         </>
     );
 };

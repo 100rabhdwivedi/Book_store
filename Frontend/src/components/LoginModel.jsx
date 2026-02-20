@@ -54,7 +54,7 @@ const LoginModal = ({isOpen, setIsOpen}) => {
         {/* Footer */}
         <p className="text-center text-sm text-gray-500 mt-4">
           Don’t have an account?{" "}
-          <span className="text-pink-500 font-medium cursor-pointer">
+          <span  className="text-pink-500 font-medium cursor-pointer">
             Register
           </span>
         </p>
