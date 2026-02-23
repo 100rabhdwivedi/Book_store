@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import LoginModal from "./LoginModel";
+import SignupModel from "./SignupModel";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [isOpenLogin, setIsOpenLogin] = useState(false);
+    const [isOpenSignup, setIsOpenSignup] = useState(false);
 
     const closeMenu = () => setOpen(false);
 
@@ -75,7 +77,9 @@ const Navbar = () => {
                     </button>
                 </div>
             </div>
-            <LoginModal isOpen={isOpenLogin} setIsOpen={setIsOpenLogin} />
+            <LoginModal isOpen={isOpenLogin} setIsOpen={setIsOpenLogin} setIsOpenSignup={setIsOpenSignup}  />
+            <SignupModel isOpen={isOpenSignup} setIsOpen={setIsOpenSignup} setIsOpenLogin={setIsOpenLogin} />
+            
             
         </>
     );

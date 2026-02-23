@@ -1,7 +1,7 @@
 
 import React from "react";
 
-const LoginModal = ({isOpen, setIsOpen}) => {
+const LoginModal = ({isOpen, setIsOpen, setIsOpenSignup}) => {
   if (!isOpen) return null;
   
   return (
@@ -54,7 +54,11 @@ const LoginModal = ({isOpen, setIsOpen}) => {
         {/* Footer */}
         <p className="text-center text-sm text-gray-500 mt-4">
           Don’t have an account?{" "}
-          <span  className="text-pink-500 font-medium cursor-pointer">
+          <span  onClick={() => {
+            setIsOpenSignup(true);
+            setIsOpen(false);
+          }}
+           className="text-pink-500 font-medium cursor-pointer">
             Register
           </span>
         </p>

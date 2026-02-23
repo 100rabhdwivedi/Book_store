@@ -1,16 +1,19 @@
 import React from "react";
 
-const SignupModel = ({ isOpen, onClose }) => {
-    // if (!isOpen) return null;
-
+const SignupModel = ({ isOpen, setIsOpen, setIsOpenLogin }) => {
+     if (!isOpen) return null;
+  
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
+        <div className="fixed inset-0 z-9999 flex items-center justify-center bg-black/40 backdrop-blur-sm">
             <div className="bg-white w-105 rounded-2xl shadow-2xl p-6 relative animate-fadeIn">
 
                 {/* Close Button */}
                 <button
                     className="absolute top-3 right-4 text-pink-500 text-2xl font-bold"
-                    onClick={onClose}
+                    onClick={() => {
+                        setIsOpen(false);
+                        setIsOpenLogin(false);
+                    }}
                 >
                     ×
                 </button>
@@ -76,7 +79,13 @@ const SignupModel = ({ isOpen, onClose }) => {
                 {/* Footer */}
                 <p className="text-center text-sm text-gray-500 mt-4">
                     Already have an account?{" "}
-                    <span className="text-pink-500 font-medium cursor-pointer">
+                    <span
+                    
+                    onClick={() => {
+                        setIsOpen(false);
+                        setIsOpenLogin(true);
+                    }}
+                    className="text-pink-500 font-medium cursor-pointer">
                         Login
                     </span>
                 </p>
