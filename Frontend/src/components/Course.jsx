@@ -1,7 +1,20 @@
 import { Link } from "react-router-dom";
-import list from "../../public/list.json"
+import axios from "axios";
 import Cards from './Cards';
+import { useEffect,useState } from "react";
 const Course = () => {
+    const [books, setBooks] = useState([]);
+    useEffect(()=>{
+        const getBooks = async () => {
+            try {
+                const response = await axios.get("http://localhost:4001/books");
+                setBooks(response.data);
+            } catch (error) {
+                console.log("Error in fetching books:", error);
+            }
+        };
+        getBooks();
+    },[])
     return (
         <div className=" mt-8 px-4 py-10 flex flex-col items-center text-center">
             <h1 className="mb-4 text-3xl font-semibold">
@@ -17,7 +30,7 @@ const Course = () => {
             <button className="px-6 py-1 mb-4 cursor-pointer bg-pink-500 text-white rounded-md flex justify-center items-center mt-2">Back</button>
             </Link>
             <div className="flex gap-4 flex-wrap  items-center justify-around ">
-            { list.map((item)=>{
+            { books.map((item)=>{
                     return <Cards key={item.id} item={item} />
             }) }
             </div>
