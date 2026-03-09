@@ -1,5 +1,5 @@
 import React from "react";
-import { useForm } from "react-hook-form";
+import { set, useForm } from "react-hook-form";
 import axios from "axios";
 import toast from "react-hot-toast";
 
@@ -28,14 +28,20 @@ const LoginModal = ({ isOpen, setIsOpen, setIsOpenSignup }) => {
         reset(); // clear form
         setIsOpen(false);
       }
-      localStorage.setItem("Users", JSON.stringify(res.data.user));
+      setTimeout(() => {
+        localStorage.setItem("Users", JSON.stringify(res.data.user));
+        window.location.reload();
+      }, 2000)
+
 
     } catch (err) {
       if (err.response) {
         toast.error(err.response.data.message);
+        setTimeout(() => {},2000)
       }
       else {
         toast.error("An error occurred during registration. Please try again.");
+        setTimeout(() => {},3000)
       }
     }
   };

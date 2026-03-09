@@ -2,8 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import LoginModal from "./LoginModel";
 import SignupModel from "./SignupModel";
+import { useAuth } from "../context/AuthProvider";
+import Logout from "./Logout";
 
 const Navbar = () => {
+    const [authUser, setAuthUser] = useAuth();
     const [open, setOpen] = useState(false);
     const [isOpenLogin, setIsOpenLogin] = useState(false);
     const [isOpenSignup, setIsOpenSignup] = useState(false);
@@ -32,10 +35,12 @@ const Navbar = () => {
                             placeholder="Search"
                             className="w-[12vw] min-w-32 px-3 py-2 border rounded-md"
                         />
-
-                        <button onClick={() => setIsOpenLogin((prev) => !prev)} className="px-6 py-2 border border-black rounded-md hover:bg-black hover:text-white">
+                        {
+                            authUser ? <Logout/>:<button onClick={() => setIsOpenLogin((prev) => !prev)} className="px-6 py-2 border border-black rounded-md hover:bg-black hover:text-white">
                             Login
                         </button>
+                        }
+                        
                     </div>
 
                     {/* Mobile Button */}
@@ -71,10 +76,11 @@ const Navbar = () => {
                         placeholder="Search"
                         className="px-4 py-2 border rounded-md"
                     />
-
+                    {authUser ? <Logout/>:
                     <button onClick={()=>setIsOpenLogin((prev)=>!prev)} className="py-3 border border-black rounded-md">
                         Login
                     </button>
+                    }
                 </div>
             </div>
             <LoginModal isOpen={isOpenLogin} setIsOpen={setIsOpenLogin} setIsOpenSignup={setIsOpenSignup}  />
